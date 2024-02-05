@@ -10,13 +10,15 @@ const HeroSection = () => {
                 {/* footnote: if the comp text is larger than 2 paraghraphs use text-left insted of text-center */}
                 <div className="col-span-7 place-self-center text-center sm:text-left">
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-l  from-cyan-400 from-30% to-blue-700 ">Gustavo Henrique{""}</span>
-                        test</h1>
+                        Gustavo Henrique<br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-l  from-cyan-400 from-30% to-blue-700 ">Desenvolvedor front-end{""}</span>
+                        {/* test */}
+                    </h1>
                     <p className="text-gray-200 text-base sm:text-lg lg:text-xl mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at dapibus ante</p>
                     <div>
                         {/* possible change? bg-gradient-to-r from-cyan-500 to-purple-700 */}
-                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent transition hover:bg-gradient-to-bl from-cyan-400 from-30% via-blue-600 to-blue-700 hover:text-white hover:border-2  text-white border border-white mt'>Contacts</button>
-                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mt-2 bg-transparent transition hover:bg-slate-100  hover:text-black'>Download CV</button>
+                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent transition hover:bg-gradient-to-bl from-cyan-400 from-30% to-blue-700 hover:text-white hover:border-2  text-white border border-white mt'>Contacts</button>
+                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mt-2 bg-transparent transition hover:bg-gradient-to-bl from-cyan-400 from-30% to-blue-700  hover:text-black'>Download CV</button>
                     </div>
                 </div>
                 {/* separando 5/12 da tela para guardar a imagem */}
