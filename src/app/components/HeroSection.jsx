@@ -12,28 +12,29 @@ const HeroSection = () => {
                 {/* footnote: if the comp text is larger than 2 paraghraphs use text-left insted of text-center */}
                 <div className="col-span-7 place-self-center text-center sm:text-left">
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-                        Gustavo Henrique<br />
+                        <span className='text-transparent bg-clip-text bg-gradient-to-l  from-cyan-400 from-30% to-blue-700 '>
+                            Gustavo Henrique
+                        </span>
+                        <br />
+                        {"A "}
                         {/* change this ↓ */}
                         <TypeAnimation
                             sequence={[
                                 // Same substring at the start will only be typed out once, initially
-                                'front-end Developer',
-                                5000, // wait 1s before replacing "Mice" with "Hamsters"
-                                'Back-end Developer',
-                                1500,
-                                'AI entusiast',
-                                3000,
+                                'Front-end Developer',
+                                3000, // wait 1s before replacing "Mice" with "Hamsters"
+                                // Not yet to be review, just an sneak pick
+                                // 'Back-end Developer',
+                                // 1500,
+                                // 'Student of AI',
+                                // 3000,
                                 'University Student',
                                 1000
                             ]}
                             wrapper="span"
-                            speed={1}
-                            style={{ fontSize: '1.4em', display: 'inline-block' }}
+                            speed={10}
                             repeat={Infinity}
                         />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-l  from-cyan-400 from-30% to-blue-700 ">
-
-                            Desenvolvedor front-end{""}</span>
                         {/* test */}
                     </h1>
                     <p className="text-gray-200 text-base sm:text-lg lg:text-xl mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at dapibus ante</p>
