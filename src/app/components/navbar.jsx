@@ -5,21 +5,8 @@ import Image from 'next/image'
 import NavLink from './NavLink'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from './MenuOverlay';
-
-const navLinks = [
-    {
-        title: "About",
-        path: "#about"
-    },
-    {
-        title: "Projects",
-        path: "#projects"
-    },
-    {
-        title: "Contact",
-        path: "#contact"
-    }
-]
+// import the data from a json file to add buttons (better for adding later some more or controling funcionality)
+import navLinks from "../data/navLinks"
 
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);

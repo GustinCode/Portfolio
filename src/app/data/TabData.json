@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Skills",
+        "id": "skills",
+        "content": [
+            "Python",
+            "Node.js",
+            "Express",
+            "SQL",
+            "Javascript",
+            "Next.js",
+            "Flutter",
+            "React"
+        ]
+    },
+    {
+        "title": "Education",
+        "id": "education",
+        "content": [
+            "Unisal University, Campinas",
+            "*on going* Full Stack course - Trends IT"
+        ]
+    },
+    {
+        "title": "Certifications",
+        "id": "certifications",
+        "content": [
+            "test",
+            "test1"
+        ]
+    }
+]
