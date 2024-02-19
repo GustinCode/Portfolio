@@ -22,7 +22,7 @@ const AboutSection = () => {
         <section className='text-white'>
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 sm:px-16">
                 <Image src="/images\reversed-logo.svg" alt='template image for now' width={500} height={500} />
-                <div>
+                <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl font-bold text-white mb-4'>
                         About me
                     </h2>
@@ -45,12 +45,10 @@ const AboutSection = () => {
                         <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>
                             {" "} Certifications {" "}
                         </TabButton>
-                        <span className='mr-4 font-semibold hover:text-white text-gray-500 hover:border-b-2 border-cyan-800'>Skill</span>
-                        <span>Education</span>
-                        <span>Experience</span>
+
                     </div>
                     <div className='mt-8'>
-                        <ul>
+                        <ul className='list-disc pl-2'>
                             {
                                 tabItem.content.map((item, index) => (
                                     <li key={index}>{item}</li>

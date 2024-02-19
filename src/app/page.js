@@ -1,6 +1,7 @@
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
-import Aboutsection from './components/AboutSection.jsx'
+import AboutSection from './components/AboutSection.jsx'
+import ProjectSection from './components/ProjectSection'
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
-        <Aboutsection />
+        <AboutSection />
+        <ProjectSection />
       </div>
     </main>
   )
