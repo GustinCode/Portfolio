@@ -3,9 +3,11 @@ This is my personal portfolio made for showing some of my projects that i made.
 ## how to set it up
 
 after cloning the repo you need to install the library's and for it run this command:
+
 ``` npm install ```
 
 after you need to build the code for ensure it and make it to run!:
+
 ``` npm build ```
 
 First, run the development server:
