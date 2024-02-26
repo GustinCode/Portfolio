@@ -10,7 +10,7 @@ after you need to build the code for ensure it and make it to run!:
 
 ``` npm build ```
 
-First, run the development server:
+and lastly run the development server:
 
 ```bash
 npm run dev
