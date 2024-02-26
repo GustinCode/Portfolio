@@ -1,6 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my personal portfolio made for showing some of my projects that i made.
 
-## Getting Started
+## how to set it up
 
 First, run the development server:
 
@@ -16,21 +16,23 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## What this project is about?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You probabily would say that is an simple portfolio with Next.js, but it was an challenge to face, Development of a website, and taking in consideration the quality and the effort to reduce and make as quick as possible it is hard.
 
-## Learn More
+## Tecnologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- Node
+- React
+- TailWindCss
+- Javascript
+- ReactComponent
+- Resend
+- [FlatIcon](https://www.flaticon.com/br/buscar?word=Linkedin) (for the icons)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## fork it and change!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+All this portfolio is made for modular modules which means that can be modified, if you want to fork it, and change some of the things for developing your one portfolio you can!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+if you want to contact me just send an email!
+[click Here](gustavogoncalves3ch@gmail.com)
