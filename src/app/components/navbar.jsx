@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         // code for a fixed navbar: fixed top-0 z-50 w-full
-        <nav className='fixed top-0 right-0 left-0 z-10 bg-gray-950 bg-opacity-100'>
+        <nav className='fixed top-0 right-0 left-0 z-20 bg-gray-950 bg-opacity-100 '>
             <div className="flex flex-wrap items-center justify-between px-3 py-2">
                 {/* <div className="flex-between w-full max-w-screen-2xl px-6 xs:px-8 sm:px-16 border-b-2 border-white p-8 py-7"> */}
                 <Link href="/" className='py-2'>

@@ -2,7 +2,8 @@
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
-
+import ImageCard from "./ImageCard"
+//studing for import a imageCard which moves in the direction of mouse position, but not working yet.
 const HeroSection = () => {
     return (
         <section>
@@ -17,7 +18,6 @@ const HeroSection = () => {
                         </span>
                         <br />
                         {"A "}
-                        {/* change this ↓ */}
                         <TypeAnimation
                             sequence={[
                                 // Same substring at the start will only be typed out once, initially
@@ -47,13 +47,15 @@ const HeroSection = () => {
                     </div>
                 </div>
                 {/* separando 5/12 da tela para guardar a imagem */}
-                <div className="col-span-5 place-self-center mt-4 lg:mt-0 w-[200px] h-[200px] lg:w-[450px] lg:h-[450px] relative">
+                <div className="col-span-5 place-self-center mt-4 md:mt-16 lg:mt-0 w-[200px] h-[200px] lg:w-[450px] lg:h-[450px] relative">
                     <Image src="/images\reversed-logo.svg"
                         alt='logo image'
                         className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
                         width={275}
                         height={275}
                     />
+                    {/* <ImageCard src="/images\Gustphoto.jpg" alt="logo Image test" width={700} height={700} /> */}
+
                 </div>
             </div>
         </section>
