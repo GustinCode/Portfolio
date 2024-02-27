@@ -8,7 +8,7 @@ after cloning the repo you need to install the library's and for it run this com
 
 after you need to build the code for ensure it and make it to run!:
 
-``` npm build ```
+``` npm run build ```
 
 and lastly run the development server:
 
