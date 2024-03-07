@@ -4,36 +4,38 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const EmailSection = () => {
+
   const handleSubmit = async (e) => {
-    //need to fix it 
     e.preventDefault()
+
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value
     }
-    const JSONData = JSON.stringify(data);
     const endpoint = "/api/send"
 
     const options = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSONData,
+      body: JSON.stringify(data)
     };
 
     try {
       const response = await fetch(endpoint, options);
       const resData = await response.json();
       console.log(resData);
+
       if (response.status === 200) {
         console.log("Email sent successfully.");
+      } else {
+        console.error("Failed to send email.");
       }
     } catch (error) {
       console.error("Error during fetch:", error);
     }
 
   }
-
   return (
     <section className='grid md:grid-cols-2 md:my-12 my-12 py-24 gap-4'>
       <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-500 opacity-60 to-transparent rounded-full h-80 w-80 z-0  blur-lg absolute botton-0 -left-4 transform -translate-x-1/2 -translate-1/2'></div>

@@ -3,11 +3,17 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL
 
-export async function POST(res, req) {
-    const { body } = await req.text();
-    const { email, subject, message } = JSON.parse(body);
+export async function POST(req, res) {
+    const { email, subject, message } = await req.json();
+    console.log(email, subject, message);
+
+    if (!email || !subject || !message) {
+        return res.status(400).json({ error: "Incomplete data provided" });
+    }
 
     try {
+
+
         const data = await resend.emails.send({
             from: fromEmail,
             to: ['gustavogoncalves3ch@gmail.com', email], // You can add multiple recipients separated
