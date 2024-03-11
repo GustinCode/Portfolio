@@ -5,7 +5,7 @@ const roboto = Roboto({ subsets: ['latin'], weight: ["400"] })
 
 export const metadata = {
   title: 'GustinGame Portfolio',
-  description: 'constructiong a Portifolio for publish my develop works',
+  description: 'constructiong a Portifolio for publish my development work',
 }
 
 export default function RootLayout({ children }) {
