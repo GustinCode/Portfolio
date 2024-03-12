@@ -42,12 +42,14 @@ const EmailSection = () => {
       <div className='z-10'><h5 className='text-xl font-bold text-white my-2'> {"Let's Connect!"} </h5>
         <p className='text-[#adb7be] mb-4 max-w-md'>
           {" "}
-          orem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed vitae tempor purus, id lacinia ipsum. Ut in iaculis odio.
-          Fusce justo mi, pharetra et ante sed, placerat vulputate mauris.
-          Suspendisse justo magna, ultrices ac augue eget, tristique
-          imperdiet odio. Proin luctus tortor dolor, nec vestibulum
-          convallis vel. Nulla erat ex, viverra id dolor nec,
+          Thank you for considering reaching out to me.
+          Whether you want an contract me, a job opportunities, or simply want to connect.
+          <br />
+          Fell free to send an message in this forms or my social networks.
+          <br />
+          I will contact you as soon as possible!.
+          <br />
+          You can also find me on social networks bellow.
         </p>
         <div className='socials flex flex-row gap-2 '>
           <Link href="https://www.github.com/Gustingame" target='_blank'>

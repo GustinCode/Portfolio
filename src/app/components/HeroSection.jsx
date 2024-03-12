@@ -37,7 +37,9 @@ const HeroSection = () => {
                         />
                         {/* test */}
                     </h1>
-                    <p className="text-gray-200 text-base sm:text-lg lg:text-xl mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at dapibus ante</p>
+                    <p className="text-gray-200 text-base sm:text-lg lg:text-xl mb-6">
+                        Cristian, Front-end Developer and as aspirant a Full-stack Dev
+                    </p>
                     <div>
                         {/* possible change? bg-gradient-to-r from-cyan-500 to-purple-700 */}
                         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent transition hover:bg-gradient-to-bl from-cyan-400 from-30% to-blue-700 hover:text-white  text-white border border-white mt'>Contacts</button>
