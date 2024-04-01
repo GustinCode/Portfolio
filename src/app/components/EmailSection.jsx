@@ -38,7 +38,7 @@ const EmailSection = () => {
   }
   return (
     <section className='grid md:grid-cols-2 md:my-12 my-12 py-24 gap-4'>
-      <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-500 opacity-60 to-transparent rounded-full h-80 w-80 z-0  blur-lg absolute botton-0 -left-4 transform -translate-x-1/2 -translate-1/2'></div>
+      <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary opacity-60 to-transparent rounded-full h-80 w-80 z-0  blur-lg absolute botton-0 -left-4 transform -translate-x-1/2 -translate-1/2'></div>
       <div className='z-10'><h5 className='text-xl font-bold text-white my-2'> {"Let's Connect!"} </h5>
         <p className='text-[#adb7be] mb-4 max-w-md'>
           {" "}
@@ -75,7 +75,7 @@ const EmailSection = () => {
             <textarea name='message' id='message' className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5' placeholder="Hi, Gustavo. I'd like to talk about..." />
             <button
               type='submit'
-              className='bg-cyan-500 hover:bg-cyan-700 text-white font-medium p-2.5 px-5 rounded-lg w-full mt-3'>Send Mensage</button>
+              className='bg-primary hover:bg-secondary-500 text-white font-medium p-2.5 px-5 rounded-lg w-full mt-3'>Send Mensage</button>
           </div>
         </form>
       </div>

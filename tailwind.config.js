@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,13 +14,12 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
-  },
-  theme: {
-    extend: {
-      perspective: {
-        '1000': '1000px',
-      },
+    colors: {
+      ...colors,
+      primary: '#22d3ee',
+      secondary: colors.blue,
     },
   },
+
   plugins: [],
 }

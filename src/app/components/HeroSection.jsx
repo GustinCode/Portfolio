@@ -13,7 +13,7 @@ const HeroSection = () => {
                 {/* footnote: if the comp text is larger than 2 paraghraphs use text-left insted of text-center */}
                 <div className="col-span-7 place-self-center text-center sm:text-left">
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-                        <span className='text-transparent bg-clip-text bg-gradient-to-l  from-cyan-400 from-30% to-blue-700 '>
+                        <span className='text-transparent bg-clip-text bg-gradient-to-l  from-primary from-30% to-secondary-700 '>
                             Gustavo Henrique
                         </span>
                         <br />
@@ -42,8 +42,8 @@ const HeroSection = () => {
                     </p>
                     <div>
                         {/* possible change? bg-gradient-to-r from-cyan-500 to-purple-700 */}
-                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent transition hover:bg-gradient-to-bl from-cyan-400 from-30% to-blue-700 hover:text-white  text-white border border-white mt'>Contacts</button>
-                        <button className='px-1 py-1 w-full sm:w-fit rounded-full mt-2 bg-transparent hover:border-0  hover:bg-gradient-to-bl from-cyan-400 from-30% to-blue-700  '>
+                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent transition hover:bg-gradient-to-bl from-primary from-30% to-secondary-700 hover:text-white  text-white border border-white mt'>Contacts</button>
+                        <button className='px-1 py-1 w-full sm:w-fit rounded-full mt-2 bg-transparent hover:border-0  hover:bg-gradient-to-bl from-primary from-30% to-secondary-700  '>
                             <span className='block bg-black hover:bg-zinc-950 rounded-full px-5 py-2'>Download CV</span>
                         </button>
                     </div>
