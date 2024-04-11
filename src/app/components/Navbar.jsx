@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="flex container lg:py-4 flex-wrap items-center justify-between px-3 py-2">
                 {/* <div className="flex-between w-full max-w-screen-2xl px-6 xs:px-8 sm:px-16 border-b-2 border-white p-8 py-7"> */}
                 <Link href="/" className='py-2'>
-                    <Image src="/images\reversed-logo.svg" alt="home logo" width={70} height={70} />
+                    <Image src="/images\reversed-logo.svg" alt="home logo" width={60} height={60} />
                 </Link>
                 <div className="mobile-menu block md:hidden">
                     {!navbarOpen ?
@@ -31,7 +31,7 @@ const Navbar = () => {
                     }
                 </div>
                 <div className='menu hidden md:block md:w-auto' id='navbar'>
-                    <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0'>
+                    <ul className='flex p-4 md:p-0 md:flex-row md:space-x-5 mt-0'>
                         {
                             navLinks.map((link, index) => (
                                 <li key={index}>

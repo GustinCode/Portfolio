@@ -14,7 +14,7 @@ export default function Home() {
       {/* if you want to add a section with a diferent color [#070707] */}
       <SpeedInsights />
       <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4 mb-8">
+      <div className="container mt-20 mx-auto px-12 py-4 mb-8">
         <HeroSection />
         <AchievementSection />
         <AboutSection />
