@@ -1,9 +1,10 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const EmailSection = () => {
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -28,8 +29,7 @@ const EmailSection = () => {
 
       if (response.status === 200) {
         console.log("Email sent successfully.");
-      } else {
-        console.error("Failed to send email.");
+        setEmailSubmitted(true);
       }
     } catch (error) {
       console.error("Error during fetch:", error);
@@ -77,6 +77,13 @@ const EmailSection = () => {
               type='submit'
               className='bg-primary hover:bg-secondary-500 text-white font-medium p-2.5 px-5 rounded-lg w-full mt-3'>Send Mensage</button>
           </div>
+          {
+            emailSubmitted && (
+              <p className='text-secondary-800 text-sm mt-2'>
+                Email send successfully!
+              </p>
+            )
+          }
         </form>
       </div>
 
