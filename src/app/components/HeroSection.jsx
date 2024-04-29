@@ -2,7 +2,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
-import ImageCard from "./ImageCard"
 import { motion } from "framer-motion"
 
 //studing for import a imageCard which moves in the direction of mouse position, but not working yet.

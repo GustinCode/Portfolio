@@ -24,8 +24,9 @@ const EmailSection = () => {
 
     try {
       const response = await fetch(endpoint, options);
-      const resData = await response.json();
-      console.log(resData);
+      // see the information of the content of the object
+      // const resData = await response.json();
+      // console.log(resData);
 
       if (response.status === 200) {
         console.log("Email sent successfully.");
