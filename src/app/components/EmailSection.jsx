@@ -5,16 +5,23 @@ import Image from 'next/image'
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    const endpoint = "/api/send"
 
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value
     }
-    const endpoint = "/api/send"
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      console.log("Invalid email format. Please enter a valid email address.");
+      return;
+    }
 
     const options = {
       method: "POST",
@@ -31,6 +38,8 @@ const EmailSection = () => {
       if (response.status === 200) {
         console.log("Email sent successfully.");
         setEmailSubmitted(true);
+        setSubject('');
+        setMessage('');
       }
     } catch (error) {
       console.error("Error during fetch:", error);
@@ -67,13 +76,22 @@ const EmailSection = () => {
             <label htmlFor="email" className='text-white block mb-2 text-sm font-medium'>Your Email</label>
             <input name='email' type='email' id='email' required
               className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
-              placeholder='your-email@example.com' />
+              placeholder='Your-email@example.com' />
             <label htmlFor="subject" className='text-white block m-2 text-sm font-medium'>Subject</label>
-            <input name='subject' type='text' id='subject' required
+            <input name='subject'
+              type='text'
+              id='subject'
+              required
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
               className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
-              placeholder='Say something nice to me!' />
+              placeholder='Topic of Interest' />
             <label htmlFor="message" className='text-white block m-2 text-sm font-medium'>Message Me</label>
-            <textarea name='message' id='message' className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5' placeholder="Hi, Gustavo. I'd like to talk about..." />
+            <textarea name='message'
+              id='message'
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5' placeholder="Hi, Gustavo. I'd like to talk about..." />
             <button
               type='submit'
               className='bg-primary hover:bg-secondary-500 text-white font-medium p-2.5 px-5 rounded-lg w-full mt-3'>Send Mensage</button>
