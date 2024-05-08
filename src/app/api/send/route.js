@@ -11,6 +11,7 @@ export async function POST(req, res) {
         const data = await resend.emails.send({
             from: fromEmail,
             to: email,
+            bcc: fromEmail,
             subject: "Thank you for contacting",
             react: (
                 <>

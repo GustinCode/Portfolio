@@ -2,9 +2,12 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { TypeAnimation } from 'react-type-animation';
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -75,11 +78,15 @@ const EmailSection = () => {
               type='text'
               id='subject'
               required
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
               className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
               placeholder='Topic of Interest' />
             <label htmlFor="message" className='text-white block m-2 text-sm font-medium'>Message Me</label>
             <textarea name='message'
               id='message'
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5' placeholder="Hi, Gustavo. I'd like to talk about..." />
             <button
               type='submit'
@@ -87,9 +94,22 @@ const EmailSection = () => {
           </div>
           {
             emailSubmitted && (
-              <p className='text-secondary-800 text-sm mt-2'>
-                Email send successfully!
-              </p>
+              <span className='text-base lg:text-lg'>
+                <TypeAnimation
+                  cursor={false}
+                  className={activeCursor}
+                  sequence={[
+                    'Email sucessifully send!',
+                    7000,
+                    "Email sucessifully send! Check your inbox!",
+                  ]}
+                  wrapper="span"
+                  style={{ fontSize: "0.75 rem", color: "#1e40af" }}
+                  speed={3}
+                  repeat={0}
+                />
+              </span>
+
             )
           }
         </form>
