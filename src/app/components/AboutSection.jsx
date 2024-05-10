@@ -19,7 +19,7 @@ const AboutSection = () => {
     const tabItem = TabData.find(item => item.id === tab);
 
     return (
-        <section className='text-white'>
+        <section id='about' className='text-white'>
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 sm:px-16">
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl font-bold text-white mb-4'>
@@ -46,7 +46,7 @@ const AboutSection = () => {
                         </TabButton>
 
                     </div>
-                    <div className='mt-8'>
+                    <div className='mt-8 mb-2 md:mb-4'>
                         <ul className='list-disc pl-2'>
                             {
                                 tabItem.content.map((item, index) => (
@@ -56,8 +56,8 @@ const AboutSection = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="mb-2 p-3 rounded-lg ">
-                    <Image src="/images\gustphoto.jpg" alt='template image for now' width={500} height={500} />
+                <div className="mb-4">
+                    <Image className='rounded-3xl mb:rounded-xl' src="/images\gustphoto.jpg" alt='template image for now' width={500} height={500} />
                 </div>
 
             </div>

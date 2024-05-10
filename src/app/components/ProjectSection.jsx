@@ -23,7 +23,7 @@ const ProjectSection = () => {
     }
 
     return (
-        <section >
+        <section id='projects' className='mb-4' >
             <h2 className='text-4xl font-bold text-center text-white mb-4'>
                 My projects
             </h2>

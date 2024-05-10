@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         // code for a fixed navbar: fixed top-0 z-50 w-full
-        <nav className='fixed mx-auto border border-b-2 border-l-0 border-t-0 border-[#33353f] top-0 right-0 left-0 z-20 bg-[#030303] bg-opacity-100 '>
+        <nav className='fixed mx-auto border border-b-2 border-l-0 border-t-0 border-[#33353f] top-0 right-0 left-0 z-20 bg-[#030303] bg-opacity-60 h-'>
             <div className="flex container lg:py-4 flex-wrap items-center justify-between px-3 py-2">
                 {/* <div className="flex-between w-full max-w-screen-2xl px-6 xs:px-8 sm:px-16 border-b-2 border-white p-8 py-7"> */}
                 <Link href="/" className='py-2'>
@@ -21,11 +21,11 @@ const Navbar = () => {
                 </Link>
                 <div className="mobile-menu block md:hidden">
                     {!navbarOpen ?
-                        <button onClick={() => setNavbarOpen(true)} className='flex item-center  px-2 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
+                        <button onClick={() => setNavbarOpen(true)} className='flex item-center  px-2 py-2 border rounded border-slate-400 text-slate-400 hover:text-white hover:border-white'>
                             <Bars3Icon className='h-5 w-5' />
                         </button>
                         :
-                        <button onClick={() => setNavbarOpen(false)} className='flex item-center  px-2 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
+                        <button onClick={() => setNavbarOpen(false)} className='flex item-center  px-2 py-2 border rounded border-slate-400 text-slate-400 hover:text-white hover:border-white'>
                             <XMarkIcon className='h-5 w-5' />
                         </button>
                     }

@@ -3,11 +3,12 @@ import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion"
+import Link from 'next/link';
 
 //studing for import a imageCard which moves in the direction of mouse position, but not working yet.
 const HeroSection = () => {
     return (
-        <section className='lg:py-12 mt-2'>
+        <section className=' mt-2'>
             {/* separando o texto da imagem */}
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
@@ -18,6 +19,7 @@ const HeroSection = () => {
                 {/* footnote: if the comp text is larger than 2 paraghraphs use text-left insted of text-center */}
                 <div className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
+
                         <span className='text-transparent bg-clip-text bg-gradient-to-l  from-primary from-30% to-secondary-700 '>
                             Gustavo Henrique
                         </span>
@@ -43,14 +45,21 @@ const HeroSection = () => {
                         {/* test */}
                     </h1>
                     <p className="text-gray-200 text-base sm:text-lg lg:text-xl mb-6">
-                        Cristian, Front-end Developer and as aspirant a Full-stack Dev
+                        Cristian, Front-end Developer and a aspirant to become a future Full-stack Dev
                     </p>
                     <div>
                         {/* possible change? bg-gradient-to-r from-cyan-500 to-purple-700 */}
-                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent transition hover:bg-gradient-to-bl from-primary from-30% to-secondary-700 hover:text-white  text-white border border-white mt'>Contacts</button>
-                        <button className='px-1 py-1 w-full sm:w-fit rounded-full mt-2 bg-transparent hover:border-0  hover:bg-gradient-to-bl from-primary from-30% to-secondary-700  '>
-                            <span className='block bg-black hover:bg-zinc-950 rounded-full px-5 py-2'>Download CV</span>
-                        </button>
+                        <a href="#contact"><button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent transition hover:bg-gradient-to-bl from-primary from-30% to-secondary-700 hover:text-white  text-white border border-white mt'>Contacts</button></a>
+                        <Link href="./curriculum/CV.GustavoHenrique.pdf"
+                            target='_blank'
+                            alt="my CV"
+                            rel='noopener noreferrer'
+                        >
+                            <button className='px-1 py-1 w-full sm:w-fit rounded-full mt-2 bg-transparent hover:border-0  hover:bg-gradient-to-bl from-primary from-30% to-secondary-700  '>
+                                <span className='block bg-black hover:bg-zinc-950 rounded-full px-5 py-2'>Download CV</span>
+                            </button>
+                        </Link>
+
                     </div>
                 </div>
                 {/* separando 5/12 da tela para guardar a imagem */}
