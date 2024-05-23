@@ -7,6 +7,15 @@ const fromEmail = process.env.FROM_EMAIL;
 export async function POST(req, res) {
     const { email, subject, message } = await req.json();
     console.log(email, subject, message);
+
+    if (!email.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    )) {
+        return NextResponse.error(505)
+    }
+
+
+
     try {
         const data = await resend.emails.send({
             from: fromEmail,
