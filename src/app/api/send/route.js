@@ -11,10 +11,8 @@ export async function POST(req, res) {
     if (!email.match(
         /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     )) {
-        return NextResponse.error(505)
+        return NextResponse.error()
     }
-
-
 
     try {
         const data = await resend.emails.send({
