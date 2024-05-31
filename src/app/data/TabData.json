@@ -17,15 +17,17 @@
         "title": "Education",
         "id": "education",
         "content": [
-            "Unisal University, Campinas",
-            "*on going* Full Stack course - Trends IT"
+            "Unisal University, Campinas - System developer analyst | 2022-",
+            "Dio - Fundamentos de IA | 2024-",
+            "Dio - Python back-end | 2024-"
         ]
     },
     {
         "title": "Certifications",
         "id": "certifications",
         "content": [
-            "algorithms and programming logic"
+            "Algorithms and programming logic",
+            "Code versioning with Git Github"
         ]
     }
 ]

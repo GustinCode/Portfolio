@@ -13,5 +13,21 @@
         ],
         "github": "https://github.com/GustinGame/web-page",
         "preview": "https://gustingame.github.io/web-page/"
+    },
+    {
+        "id": 2,
+        "title": "Chat-bot made with flutter",
+        "description": "An Chat-bot made with Flutter interacting with an api powered by python flask, processed by natural language processor (NTLK), for a 4° semester presentation",
+        "status": "Completed",
+        "created_at": "2023-12-07",
+        "image": "/images/projects/SentBotApp.png",
+        "tag": [
+            "All",
+            "Web",
+            "Flutter",
+            "AI"
+        ],
+        "github": "https://github.com/GustinGame/machine-learning",
+        "preview": "#"
     }
 ]
