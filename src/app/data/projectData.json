@@ -11,8 +11,8 @@
             "Web",
             "HTML"
         ],
-        "github": "https://github.com/GustinGame/web-page",
-        "preview": "https://gustingame.github.io/web-page/"
+        "github": "https://github.com/GustinCode/web-page",
+        "preview": "https://gustincode.github.io/web-page/"
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
             "Flutter",
             "AI"
         ],
-        "github": "https://github.com/GustinGame/machine-learning",
+        "github": "https://github.com/GustinCode/machine-learning",
         "preview": "#"
     }
 ]
