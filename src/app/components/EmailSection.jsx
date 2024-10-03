@@ -66,53 +66,57 @@ const EmailSection = () => {
           </Link>
         </div>
       </div>
+      {/* working in progress  */}
       <div>
-        <form className='flex flex-col' onSubmit={handleSubmit}>
-          <div className='mb-6 z-10'>
-            <label htmlFor="email" className='text-white block mb-2 text-sm font-medium'>Your Email</label>
-            <input name='email' type='email' id='email' required
-              className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
-              placeholder='Your-email@example.com' />
-            <label htmlFor="subject" className='text-white block m-2 text-sm font-medium'>Subject</label>
-            <input name='subject'
-              type='text'
-              id='subject'
-              required
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-              className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
-              placeholder='Topic of Interest' />
-            <label htmlFor="message" className='text-white block m-2 text-sm font-medium'>Message Me</label>
-            <textarea name='message'
-              id='message'
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5' placeholder="Hi, Gustavo. I'd like to talk about..." />
-            <button
-              type='submit'
-              className='bg-primary hover:bg-secondary-500 text-white font-medium p-2.5 px-5 rounded-lg w-full mt-3'>Send Mensage</button>
-          </div>
-          {
-            emailSubmitted && (
-              <span className='text-base lg:text-lg'>
-                <TypeAnimation
-                  cursor={false}
-                  className={activeCursor}
-                  sequence={[
-                    'Email sucessifully send!',
-                    7000,
-                    "Email sucessifully send! Check your inbox!",
-                  ]}
-                  wrapper="span"
-                  style={{ fontSize: "0.75 rem", color: "#1e40af" }}
-                  speed={3}
-                  repeat={0}
-                />
-              </span>
-
-            )
-          }
-        </form>
+        {/* remove this ⬇️ */}
+        <p className='text-white font-sans text-6xl flex justify-center'>Work in progress</p>
+        <div className='block relative z-10 ' >
+          {/* remove this ⬆️ and remove this ⬇️"block blur-lg pointer-events-none user-select-none" and remove onCopy={(e) => e.preventDefault()} when done */}
+          <form className=' flex-col block blur-lg pointer-events-none user-select-none' onSubmit={handleSubmit} onCopy={(e) => e.preventDefault()}>
+            <div className='mb-6 '> {/*add later z-10 */}
+              <label htmlFor="email" className='text-white block mb-2 text-sm font-medium'>Your Email</label>
+              <input name='email' type='email' id='email' required
+                className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
+                placeholder='Your-email@example.com' />
+              <label htmlFor="subject" className='text-white block m-2 text-sm font-medium'>Subject</label>
+              <input name='subject'
+                type='text'
+                id='subject'
+                required
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
+                placeholder='Topic of Interest' />
+              <label htmlFor="message" className='text-white block m-2 text-sm font-medium'>Message Me</label>
+              <textarea name='message'
+                id='message'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className='bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5' placeholder="Hi, Gustavo. I'd like to talk about..." />
+              <button
+                type='submit'
+                className='bg-primary hover:bg-secondary-500 text-white font-medium p-2.5 px-5 rounded-lg w-full mt-3'>Send Mensage</button>
+            </div>
+            {
+              emailSubmitted && (
+                <span className='text-base lg:text-lg'>
+                  <TypeAnimation
+                    cursor={false}
+                    sequence={[
+                      'Email sucessifully send!',
+                      7000,
+                      "Email sucessifully send! Check your inbox!",
+                    ]}
+                    wrapper="span"
+                    style={{ fontSize: "0.75 rem", color: "#1e40af" }}
+                    speed={3}
+                    repeat={0}
+                  />
+                </span>
+              )
+            }
+          </form>
+        </div>
       </div>
 
     </section>
