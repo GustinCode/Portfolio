@@ -8,7 +8,7 @@ const AnimatedNumbers = dynamic(() => { return import("react-animated-numbers") 
 const AchievementSection = () => {
     return (
         <div className='py-8 px-8 xl:gap-16 sm:py-16 xl:px-16'>
-            <div className="border-[#33353f] container border rounded-md py-8 px-16 flex flex-row items-center justify-between ">
+            <div className="border-[#33353f] container border rounded-md py-8 px-9 flex flex-row items-center justify-between ">
 
                 {
                     achievementList.map((achievement, index) => {
