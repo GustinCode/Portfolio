@@ -58,7 +58,7 @@ const EmailSection = () => {
           You can also find me on social networks bellow.
         </p>
         <div className='socials flex flex-row gap-2 '>
-          <Link href="https://www.github.com/Gustingame" target='_blank'>
+          <Link href="https://www.github.com/Gustincode" target='_blank'>
             <Image src="/images\github-reversed.png" alt='Github Icon' height={30} width={30} />
           </Link>
           <Link href="https://www.linkedin.com/in/gustavohenrique-dev/" target='_blank'>
