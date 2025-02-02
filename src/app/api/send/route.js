@@ -15,24 +15,27 @@ export async function POST(req, res) {
     }
 
     try {
-        const data = await resend.emails.send({
-            from: "Gustavo Henrique <gustavogoncalves3ch@gmail.com>", fromEmail,
-            to: email,
-            bcc: fromEmail,
-            subject: "Thank you for contacting",
-            react: (
-                <>
-                    <h1>Thank you for contacting!</h1>
-                    <p>Your message has been received:</p>
-                    <h2>{subject}</h2>
-                    <p>{message}</p>
+        const data = await resend.emails.send(
+            {
+                from: "Gustavo Henrique <Contact@gustincode.tech>",
+                to: email,
+                bcc: fromEmail,
+                subject: "Thank you for contacting",
+                react: (
+                    <>
+                        <h1>Thank you for contacting!</h1>
+                        <p>Your message has been received:</p>
+                        <br />
+                        <h2>{subject}</h2>
+                        <p>{message}</p>
+                        <br />
+                        <br />
+                        <p>I appreciate your inquiry and will respond promptly.<br />Please expect to hear from me shortly.</p>
+                    </>
+                ),
+            }
 
-                    <br />
-                    <br />
-                    <p>I appreciate your inquiry and will respond promptly.<br />Please expect to hear from me shortly.</p>
-                </>
-            ),
-        });
+        );
         return NextResponse.json(data);
     } catch (error) {
         return NextResponse.json({ error });
