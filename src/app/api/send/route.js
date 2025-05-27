@@ -42,7 +42,7 @@ export async function POST(req, res) {
                             </p>
                             <hr style={{ margin: "24px 0", borderColor: "#eee" }} />
                             <p style={{ fontSize: "12px", color: "#888" }}>
-                                Você está recebendo este e-mail porque entrou em contato através do site <a href="mailto:contato@gustincode.tech">contato@gustincode.tech</a><br />.
+                                Você está recebendo este e-mail porque entrou em contato através do site <a href="https://gustincode.tech">gustincode.tech</a>.
                             </p>
                         </div>
                     </>
