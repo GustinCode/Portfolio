@@ -23,15 +23,28 @@ export async function POST(req, res) {
                 subject: "Thank you for contacting",
                 react: (
                     <>
-                        <h1>Thank you for contacting!</h1>
-                        <p>Your message has been received:</p>
-                        <br />
+                        <p>Olá,</p>
+                        <p>Obrigado por entrar em contato!</p>
+                        <p>
+                            Recebemos sua mensagem com o seguinte assunto:
+                        </p>
                         <h2>{subject}</h2>
                         <p>{message}</p>
+                        <p>
+                            Agradecemos pelo seu contato. Estou revisando suas perguntas e retornarei com as informações o mais breve possível.
+                        </p>
+                        <p>
+                            Se houver algo mais que queira adicionar ou esclarecer, por favor, fique à vontade para responder a este e-mail.
+                        </p>
                         <br />
-                        <br />
-                        <p>I appreciate your inquiry and will respond promptly.<br />Please expect to hear from me shortly.</p>
+                        <p>
+                            Atenciosamente,<br />
+                            Gustavo Henrique<br />
+                            Desenvolvedor Front-end<br />
+                            contato@gustincode.tech
+                        </p>
                     </>
+
                 ),
             }
 
