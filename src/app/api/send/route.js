@@ -23,26 +23,28 @@ export async function POST(req, res) {
                 subject: "Thank you for contacting",
                 react: (
                     <>
-                        <p>Olá,</p>
-                        <p>Obrigado por entrar em contato!</p>
-                        <p>
-                            Recebemos sua mensagem com o seguinte assunto:
-                        </p>
-                        <h2>{subject}</h2>
-                        <p>{message}</p>
-                        <p>
-                            Agradecemos pelo seu contato. Estou revisando suas perguntas e retornarei com as informações o mais breve possível.
-                        </p>
-                        <p>
-                            Se houver algo mais que queira adicionar ou esclarecer, por favor, fique à vontade para responder a este e-mail.
-                        </p>
-                        <br />
-                        <p>
-                            Atenciosamente,<br />
-                            Gustavo Henrique<br />
-                            Desenvolvedor Front-end<br />
-                            contato@gustincode.tech
-                        </p>
+                        <div style={{ fontFamily: "Arial, sans-serif", fontSize: "16px", color: "#333" }}>
+                            <p>Olá,</p>
+                            <p>Obrigado por entrar em contato!<br />Recebemos sua mensagem com o seguinte assunto:</p>
+                            <h2 style={{ color: "#007bff" }}>{subject}</h2>
+                            <p>{message}</p>
+                            <p>
+                                Agradeço pelo seu contato. Estou revisando suas perguntas e retornarei com as informações em breve.
+                            </p>
+                            <p>Se houver algo mais que deseje adicionar ou esclarecer, sinta-se à vontade para responder este e-mail.</p>
+                            <br />
+                            <p>
+                                Atenciosamente,<br />
+                                <strong>Gustavo Henrique</strong><br />
+                                Desenvolvedor Front-end<br />
+                                <a href="mailto:contato@gustincode.tech">contato@gustincode.tech</a><br />
+                                <a href="https://gustincode.tech">gustincode.tech</a>
+                            </p>
+                            <hr style={{ margin: "24px 0", borderColor: "#eee" }} />
+                            <p style={{ fontSize: "12px", color: "#888" }}>
+                                Você está recebendo este e-mail porque entrou em contato através do site <a href="mailto:contato@gustincode.tech">contato@gustincode.tech</a><br />.
+                            </p>
+                        </div>
                     </>
 
                 ),
@@ -51,6 +53,10 @@ export async function POST(req, res) {
         );
         return NextResponse.json(data);
     } catch (error) {
-        return NextResponse.json({ error });
+        rconsole.error("Erro ao enviar e-mail:", error);
+        return NextResponse.json(
+            { error: "Erro interno ao tentar enviar o e-mail." },
+            { status: 500 }
+        );
     }
 }
