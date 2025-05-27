@@ -20,12 +20,12 @@ export async function POST(req, res) {
                 from: "Gustavo Henrique <Contact@gustincode.tech>",
                 to: email,
                 bcc: fromEmail,
-                subject: "Thank you for contacting",
+                subject: "Obrigado por entrar em contato!",
                 react: (
                     <>
                         <div style={{ fontFamily: "Arial, sans-serif", fontSize: "16px", color: "#333" }}>
                             <p>Olá,</p>
-                            <p>Obrigado por entrar em contato!<br />Recebemos sua mensagem com o seguinte assunto:</p>
+                            <p>Recebemos sua mensagem com o seguinte assunto:</p>
                             <h2 style={{ color: "#007bff" }}>{subject}</h2>
                             <p>{message}</p>
                             <p>
