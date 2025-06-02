@@ -20,7 +20,7 @@ const AboutSection = () => {
 
     return (
         <section id='about' className='text-white'>
-            <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 sm:px-16">
+            <div className="md:grid md:grid-cols-2 gap-8 md:gap-10 items-center xl:gap-16 container mx-auto">
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl font-bold text-white mb-4'>
                         About me
@@ -56,8 +56,8 @@ const AboutSection = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="mb-4">
-                    <Image className='rounded-3xl mb:rounded-xl' src="/images\gustphoto.jpg" alt='template image for now' width={500} height={500} />
+                <div className="mb-4 flex justify-center ">
+                    <Image className='rounded-3xl mb:rounded-xl ' src="/images\gustphoto.jpg" alt='template image for now' width={400} height={400} />
                 </div>
 
             </div>
