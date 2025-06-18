@@ -29,5 +29,23 @@
         ],
         "github": "https://github.com/GustinCode/machine-learning",
         "preview": "#"
+    },
+    {
+        "id": 3,
+        "title": "financial web-application dashboard",
+        "description": "A modern web application designed to help users manage their personal finances effectively. With a comprehensive financial dashboard that allows users to track income, expenses, and budgets in real-time.",
+        "status": "currently working",
+        "created_at": "2025-06-08",
+        "image": "/images/projects/SentBotApp.png",
+        "tag": [
+            "All",
+            "Web",
+            "SQL",
+            "DASHBOARD"
+        ],
+        "github": "https://github.com/GustinCode/machine-learning",
+        "preview": "#"
     }
+]
+
 ]
