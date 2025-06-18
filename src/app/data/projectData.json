@@ -36,7 +36,7 @@
         "description": "A modern web application designed to help users manage their personal finances effectively. With a comprehensive financial dashboard that allows users to track income, expenses, and budgets in real-time.",
         "status": "currently working",
         "created_at": "2025-06-08",
-        "image": "/images/projects/financialApp1.png",
+        "image": "/images/projects/financialApp.png",
         "tag": [
             "All",
             "Web",
@@ -44,7 +44,6 @@
             "DASHBOARD"
         ],
         "github": "https://github.com/GustinCode/grow-wealth-online",
-        "preview": "#"
+        "preview": "grow-wealth-online.lovable.app"
     }
-
 ]
