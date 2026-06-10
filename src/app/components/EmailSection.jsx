@@ -59,10 +59,10 @@ const EmailSection = () => {
         </p>
         <div className='socials flex flex-row gap-2 '>
           <Link href="https://www.github.com/Gustincode" target='_blank'>
-            <Image src="/images\github-reversed.png" alt='Github Icon' height={30} width={30} />
+            <Image src="/images/github-reversed.png" alt='Github Icon' height={30} width={30} />
           </Link>
           <Link href="https://www.linkedin.com/in/gustavohenrique-dev/" target='_blank'>
-            <Image src="/images\linkedin-reversed.png" alt='Linkedin Icon' height={30} width={30} />
+            <Image src="/images/linkedin-reversed.png" alt='Linkedin Icon' height={30} width={30} />
           </Link>
         </div>
       </div>

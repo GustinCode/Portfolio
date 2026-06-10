@@ -57,7 +57,7 @@ const AboutSection = () => {
                     </div>
                 </div>
                 <div className="mb-4 flex justify-center ">
-                    <Image className='rounded-3xl mb:rounded-xl ' src="/images\gustphoto.jpg" alt='template image for now' width={400} height={400} />
+                    <Image className='rounded-3xl mb:rounded-xl ' src="/images/gustphoto.jpg" alt='template image for now' width={400} height={400} />
                 </div>
 
             </div>
